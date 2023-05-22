@@ -1,0 +1,23 @@
+#Server Information
+server:
+  port: 8090
+
+#Database Config
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:3306/postgres
+    username: postgres
+    password: skmishra@1
+    hikari:
+      initialization-fail-timeout: 0
+      jpa:
+        database-platform: org.hibernate.dialect.PostgresSQL94Dialect
+        generate-ddl: true
+        show-sql: true
+        hibernate:
+          ddl-auto: create
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+
